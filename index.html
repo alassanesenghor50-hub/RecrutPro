@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RecrutPro — Cabinet de recrutement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="logo-wrapper">
+      <img src="images/logo.png" alt="Logo RecrutPro" class="logo-img" onerror="this.style.display='none'" />
+      <span class="logo">Recrut<span class="logo-accent">Pro</span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#temoignages">Témoignages</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="pages/contact.html" class="btn-contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="tag animate">Cabinet de recrutement · Dakar, Sénégal</p>
+      <h1 class="animate delay-1">Trouvez les meilleurs <em>talents</em> pour votre entreprise</h1>
+      <p class="subtitle animate delay-2">Spécialistes du recrutement en Afrique de l'Ouest.<br>Des profils qualifiés, rapidement.</p>
+      <div class="hero-buttons animate delay-3">
+        <a href="pages/contact.html" class="btn-primary">Nous contacter</a>
+        <a href="#services" class="btn-secondary">Voir nos services</a>
+      </div>
+    </div>
+    <div class="hero-visual animate delay-2">
+      <img
+        src="images/hero.jpg"
+        alt="Équipe professionnelle en réunion"
+        class="hero-img"
+        onerror="this.parentElement.style.background='#B5D4F4'"
+      />
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat">
+      <h2 data-target="120" data-suffix="+">0</h2>
+      <p>Entreprises clientes</p>
+    </div>
+    <div class="stat">
+      <h2 data-target="500" data-suffix="+">0</h2>
+      <p>Recrutements réussis</p>
+    </div>
+    <div class="stat">
+      <h2 data-target="8" data-suffix=" ans">0</h2>
+      <p>D'expérience</p>
+    </div>
+    <div class="stat">
+      <h2 data-target="98" data-suffix="%">0</h2>
+      <p>Taux de satisfaction</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <p class="section-tag">Ce que nous faisons</p>
+      <h2>Nos services</h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card fade-in">
+        <img
+          src="images/service-recrutement.svg"
+          alt="Illustration recrutement CDI"
+          class="service-img"
+          onerror="this.style.display='none'"
+        />
+        <div class="service-icon blue">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3>Recrutement CDI</h3>
+        <p>Sourcing, tri et entretiens pour postes permanents. Nous trouvons le bon profil au bon moment.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <img
+          src="images/service-chasse.svg"
+          alt="Illustration chasse de tête"
+          class="service-img"
+          onerror="this.style.display='none'"
+        />
+        <div class="service-icon green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </div>
+        <h3>Chasse de tête</h3>
+        <p>Identification de profils seniors et rares. Pour les postes clés qui exigent l'excellence.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <img
+          src="images/service-audit.svg"
+          alt="Illustration audit RH"
+          class="service-img"
+          onerror="this.style.display='none'"
+        />
+        <div class="service-icon amber">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <path d="M8 21h8M12 17v4"/>
+          </svg>
+        </div>
+        <h3>Audit RH</h3>
+        <p>Analyse et optimisation de vos processus RH pour améliorer la performance de votre équipe.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section class="about" id="about">
+    <div class="about-img-wrapper fade-in">
+      <img
+        src="images/equipe.jpg"
+        alt="L'équipe RecrutPro à Dakar"
+        class="about-img"
+        onerror="this.parentElement.style.background='#E1F5EE'"
+      />
+    </div>
+    <div class="about-content fade-in">
+      <p class="section-tag">Qui sommes-nous</p>
+      <h2>Un cabinet au cœur de l'Afrique de l'Ouest</h2>
+      <p>Depuis 2017, RecrutPro accompagne les entreprises sénégalaises et régionales dans la recherche de leurs meilleurs profils. Notre réseau couvre le Sénégal, la Côte d'Ivoire, le Mali et le Cameroun.</p>
+      <br/>
+      <p>Nous croyons que le bon recrutement transforme les entreprises. C'est pourquoi nous mettons un soin particulier à comprendre votre culture avant de vous proposer des candidats.</p>
+      <br/>
+      <a href="pages/contact.html" class="btn-primary">Travailler avec nous</a>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="testimonials" id="temoignages">
+    <div class="section-header">
+      <p class="section-tag">Ils nous font confiance</p>
+      <h2>Témoignages</h2>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card fade-in">
+        <p>"Recrutement rapide et professionnel. Nous avons trouvé notre DRH en 3 semaines seulement."</p>
+        <div class="testimonial-author">
+          <img
+            src="images/temoignage-1.jpg"
+            alt="Photo Amadou Mbaye"
+            class="author-img"
+            onerror="this.outerHTML='<div class=\'avatar-fallback blue\'>AM</div>'"
+          />
+          <div>
+            <strong>Amadou Mbaye</strong>
+            <span>DG, Groupe Sénégal Tech</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <p>"Une équipe à l'écoute, des candidats vraiment qualifiés. Je recommande vivement RecrutPro."</p>
+        <div class="testimonial-author">
+          <img
+            src="images/temoignage-2.jpg"
+            alt="Photo Fatou Diallo"
+            class="author-img"
+            onerror="this.outerHTML='<div class=\'avatar-fallback green\'>FD</div>'"
+          />
+          <div>
+            <strong>Fatou Diallo</strong>
+            <span>PDG, Cabinet Dakar Finance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <p>"Grâce à RecrutPro, nous avons constitué une équipe solide en moins de 2 mois. Excellent suivi."</p>
+        <div class="testimonial-author">
+          <img
+            src="images/temoignage-3.jpg"
+            alt="Photo Seydou Konaté"
+            class="author-img"
+            onerror="this.outerHTML='<div class=\'avatar-fallback amber\'>SK</div>'"
+          />
+          <div>
+            <strong>Seydou Konaté</strong>
+            <span>CEO, AfriLogistics</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-content">
+      <h2>Prêt à recruter ?</h2>
+      <p>Parlons de vos besoins. Un expert vous répond sous 24h.</p>
+      <a href="pages/contact.html" class="btn-primary">Prendre rendez-vous →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo-wrapper">
+        <img src="images/logo-blanc.png" alt="Logo RecrutPro" class="logo-img" onerror="this.style.display='none'" />
+        <span class="logo footer-logo">Recrut<span class="logo-accent">Pro</span></span>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#temoignages">Témoignages</a>
+        <a href="#about">À propos</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 RecrutPro — Dakar, Sénégal</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
