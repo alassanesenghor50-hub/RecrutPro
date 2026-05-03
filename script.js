@@ -93,17 +93,26 @@ window.addEventListener('scroll', () => {
 const form = document.querySelector('#contact-form');
 if (form) {
   form.addEventListener('submit', (e) => {
-    e.preventDefault();
     const nom = form.querySelector('#nom')?.value.trim();
     const email = form.querySelector('#email')?.value.trim();
     const message = form.querySelector('#message')?.value.trim();
 
-    if (!nom) return showAlert('Veuillez entrer votre nom.', 'error');
-    if (!email || !email.includes('@')) return showAlert('Veuillez entrer un email valide.', 'error');
-    if (!message) return showAlert('Veuillez écrire un message.', 'error');
-
-    showAlert(`Merci ${nom} ! Votre message a été envoyé. Nous répondons sous 24h.`, 'success');
-    form.reset();
+    if (!nom) {
+      e.preventDefault();
+      showAlert('Veuillez entrer votre nom.', 'error');
+      return;
+    }
+    if (!email || !email.includes('@')) {
+      e.preventDefault();
+      showAlert('Veuillez entrer un email valide.', 'error');
+      return;
+    }
+    if (!message) {
+      e.preventDefault();
+      showAlert('Veuillez écrire un message.', 'error');
+      return;
+    }
+    // Si tout est bon, on laisse Netlify envoyer le formulaire
   });
 }
 
