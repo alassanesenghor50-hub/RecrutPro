@@ -54,7 +54,8 @@
     <h1 class="animate delay-1">Contactez-nous</h1>
     <p class="subtitle animate delay-2">Un expert vous répond sous 24h pour discuter de vos besoins en recrutement.</p>
 
-    <form id="contact-form" class="animate delay-3">
+    <form id="contact-form" class="animate delay-3" name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
       <div class="form-group">
         <label for="nom">Nom complet</label>
         <input type="text" id="nom" placeholder="ex: Amadou Mbaye" />
