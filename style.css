@@ -247,7 +247,7 @@ body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(-
 }
 
 .section-header h2 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 36px;
   font-weight: 700;
   color: var(--blue-dark);
