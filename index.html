@@ -6,18 +6,21 @@
   <title>RecrutPro — Cabinet de recrutement</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="logo-wrapper">
+      <!-- LOGO : téléchargez votre logo et nommez-le logo.png -->
+      <!-- Si vous n'avez pas de logo, supprimez la balise img ci-dessous -->
       <img src="images/logo.png" alt="Logo RecrutPro" class="logo-img" onerror="this.style.display='none'" />
       <span class="logo">Recrut<span class="logo-accent">Pro</span></span>
     </div>
     <ul class="nav-links" id="nav-links">
       <li><a href="#services">Services</a></li>
+      <li><a href="pages/offres.html">Offres d'emploi</a></li>
       <li><a href="#temoignages">Témoignages</a></li>
       <li><a href="#about">À propos</a></li>
       <li><a href="pages/contact.html" class="btn-contact">Contact</a></li>
@@ -27,7 +30,13 @@
     </button>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO
+       IMAGE À TÉLÉCHARGER :
+       → Site : unsplash.com ou nappy.co
+       → Chercher : "africa office team" ou "business meeting africa"
+       → Renommer le fichier : hero.jpg
+       → Placer dans : images/hero.jpg
+  -->
   <section class="hero">
     <div class="hero-content">
       <p class="tag animate">Cabinet de recrutement · Dakar, Sénégal</p>
@@ -68,7 +77,14 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- SERVICES
+       IMAGES À TÉLÉCHARGER :
+       → Site : undraw.co
+       → Chercher : "hiring" → renommer : service-recrutement.svg
+       → Chercher : "search" → renommer : service-chasse.svg
+       → Chercher : "analytics" → renommer : service-audit.svg
+       → Placer dans : images/
+  -->
   <section class="services" id="services">
     <div class="section-header">
       <p class="section-tag">Ce que nous faisons</p>
@@ -132,7 +148,13 @@
     </div>
   </section>
 
-  <!-- À PROPOS -->
+  <!-- À PROPOS
+       IMAGE À TÉLÉCHARGER :
+       → Site : nappy.co ou pexels.com
+       → Chercher : "african team office" ou "business meeting senegal"
+       → Renommer le fichier : equipe.jpg
+       → Placer dans : images/equipe.jpg
+  -->
   <section class="about" id="about">
     <div class="about-img-wrapper fade-in">
       <img
@@ -153,7 +175,14 @@
     </div>
   </section>
 
-  <!-- TÉMOIGNAGES -->
+  <!-- TÉMOIGNAGES
+       IMAGES À TÉLÉCHARGER :
+       → Site : nappy.co ou pexels.com
+       → Chercher : "african businessman" / "african businesswoman"
+       → Renommer : temoignage-1.jpg / temoignage-2.jpg / temoignage-3.jpg
+       → Placer dans : images/
+       → Taille idéale : 100x100px (photo de profil carrée)
+  -->
   <section class="testimonials" id="temoignages">
     <div class="section-header">
       <p class="section-tag">Ils nous font confiance</p>
@@ -238,6 +267,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
